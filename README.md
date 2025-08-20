@@ -21,7 +21,6 @@ Quick EDA of Steam’s videogame marketplace using **Databricks** + **PySpark**,
 
 **1) Macro Analysis**
 - Initial imports & schema unnesting
-- Exploratory overview
 - Publishers with most releases  
 - Best-rated games  
 - Releases by year (incl. COVID period)  
@@ -30,21 +29,10 @@ Quick EDA of Steam’s videogame marketplace using **Databricks** + **PySpark**,
 - Age restrictions (PEGI-like 16/18)
 
 **2) Genres & Platforms**
-- Genre representation (counts & shares)  
+- Genre representation 
 - Positive vs. negative review ratio by genre  
 - Publishers’ preferred genres  
-- Most “lucrative” genres (proxy metrics)  
+- Most “lucrative” genres   
 - Platform coverage (Windows/Mac/Linux)  
 - Genre × platform availability patterns
-
-## ▶️ How to run (Databricks)
-1. Import notebooks into your Databricks workspace.
-2. Attach a cluster (DBR 12.x+ recommended).
-3. Load data (example):
-
-```python
-df_raw = spark.read.json("s3://full-stack-bigdata-datasets/Big_Data/Project_Steam/steam_game_output.json")
-df_raw.printSchema()
-```
-4. Flatten nested fields using select, explode, and getField.
-5. Use Databricks’ Visualization pane to reproduce charts and dashboards.
+ 
