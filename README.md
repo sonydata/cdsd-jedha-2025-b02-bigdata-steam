@@ -1,4 +1,4 @@
-# cdsd-jedha-2025-b02-bigdata-steam
+# Steam — Big Data Analysis (CDSD · Jedha · Bloc 2)
 
 Quick EDA of Steam’s videogame marketplace using **Databricks** + **PySpark**, with built-in Databricks visualizations.
 
